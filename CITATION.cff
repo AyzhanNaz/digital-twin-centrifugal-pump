@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the paper and this dataset."
+title: "Dataset for Digital Twin-Driven Design of Centrifugal Pumps with Automated Documentation Generation"
+type: dataset
+authors:
+  - family-names: Tuleshov
+    given-names: Yerkebulan
+  - family-names: Tuleshov
+    given-names: Amandyk
+  - family-names: Kuatova
+    given-names: Moldir
+  - family-names: Issabekov
+    given-names: Zhanibek
+  - family-names: Nazyrova
+    given-names: Aizhan
+version: "1.0.0"
+date-released: "2025-01-01"
+license: CC-BY-4.0
+keywords:
+  - centrifugal pump
+  - digital twin
+  - surrogate model
+  - CFD
+  - design optimization
+references:
+  - type: article
+    title: "Digital Twin-Driven Design of Centrifugal Pumps with Automated Documentation Generation"
+    authors:
+      - family-names: Tuleshov
+        given-names: Yerkebulan
+      - family-names: Tuleshov
+        given-names: Amandyk
+      - family-names: Kuatova
+        given-names: Moldir
+      - family-names: Issabekov
+        given-names: Zhanibek
+      - family-names: Nazyrova
+        given-names: Aizhan
+    journal: "Engineering, Technology & Applied Science Research"
+    year: 2025
+    notes: "ETASR submission #20817"

@@ -1,0 +1,4 @@
+pump,application,Q_m3h,H_m,n_rpm,nq,impeller_type
+P1,Municipal water supply,180.0,50.0,2950,35,radial
+P2,Oil & gas process (API),90.0,120.0,2950,13,narrow radial
+P3,HVAC circulation,320.0,32.0,2950,65,mixed-radial

@@ -1,0 +1,7 @@
+variable,symbol,baseline,lower,upper
+outlet_blade_angle_deg,beta2,24.0,18.0,32.0
+number_of_blades,Z,6.0,5.0,8.0
+outlet_width_ratio,b2_D2,0.058,0.045,0.075
+inlet_diameter_ratio,D1_D2,0.48,0.42,0.55
+blade_wrap_angle_deg,phi,115.0,95.0,135.0
+volute_throat_area_mm2,A8,2150.0,1800.0,2500.0

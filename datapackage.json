@@ -1,0 +1,107 @@
+{
+  "name": "centrifugal-pump-digital-twin-dataset",
+  "title": "Centrifugal Pump Digital-Twin Design Dataset (ETASR #20817)",
+  "description": "Duty specifications, design-vector bounds, design-of-experiments CFD samples, surrogate-vs-CFD accuracy records, head/efficiency characteristics, and BEP validation for three centrifugal pumps (P1 municipal water, P2 oil & gas, P3 HVAC).",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "keywords": ["centrifugal pump", "digital twin", "surrogate model", "CFD", "design optimization", "additive prototyping"],
+  "contributors": [
+    {"title": "Yerkebulan Tuleshov", "role": "author"},
+    {"title": "Amandyk Tuleshov", "role": "author"},
+    {"title": "Moldir Kuatova", "role": "author"},
+    {"title": "Zhanibek Issabekov", "role": "author"},
+    {"title": "Aizhan Nazyrova", "role": "author"}
+  ],
+  "resources": [
+    {
+      "name": "duty_specifications",
+      "path": "data/duty_specifications.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "pump", "type": "string"},
+          {"name": "application", "type": "string"},
+          {"name": "Q_m3h", "type": "number", "unit": "m3/h"},
+          {"name": "H_m", "type": "number", "unit": "m"},
+          {"name": "n_rpm", "type": "integer", "unit": "rpm"},
+          {"name": "nq", "type": "integer"},
+          {"name": "impeller_type", "type": "string"}
+        ]
+      }
+    },
+    {
+      "name": "design_vector_bounds",
+      "path": "data/design_vector_bounds.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "variable", "type": "string"},
+          {"name": "symbol", "type": "string"},
+          {"name": "baseline", "type": "number"},
+          {"name": "lower", "type": "number"},
+          {"name": "upper", "type": "number"}
+        ]
+      }
+    },
+    {
+      "name": "doe_cfd_samples",
+      "path": "data/doe/P1_doe_cfd_samples.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "sample_id", "type": "string"},
+          {"name": "beta2_deg", "type": "number", "unit": "deg"},
+          {"name": "Z_blades", "type": "integer"},
+          {"name": "b2_D2", "type": "number"},
+          {"name": "D1_D2", "type": "number"},
+          {"name": "phi_deg", "type": "number", "unit": "deg"},
+          {"name": "A8_mm2", "type": "integer", "unit": "mm2"},
+          {"name": "eta_cfd_pct", "type": "number", "unit": "%"},
+          {"name": "eta_physics_pct", "type": "number", "unit": "%"},
+          {"name": "eta_hybrid_surrogate_pct", "type": "number", "unit": "%"},
+          {"name": "H_cfd_m", "type": "number", "unit": "m"},
+          {"name": "NPSHr_m", "type": "number", "unit": "m"}
+        ]
+      }
+    },
+    {
+      "name": "surrogate_vs_cfd",
+      "path": "data/surrogate_accuracy/P1_surrogate_vs_cfd.csv",
+      "format": "csv",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "twin_curves",
+      "path": "data/performance_curves/P1_twin_curves.csv",
+      "format": "csv",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "experiment_points",
+      "path": "data/performance_curves/P1_experiment_points.csv",
+      "format": "csv",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "bep_validation",
+      "path": "data/bep_validation.csv",
+      "format": "csv",
+      "mediatype": "text/csv"
+    },
+    {
+      "name": "twin_metrics",
+      "path": "data/twin_metrics.csv",
+      "format": "csv",
+      "mediatype": "text/csv"
+    }
+  ]
+}
